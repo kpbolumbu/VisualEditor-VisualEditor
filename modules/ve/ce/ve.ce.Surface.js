@@ -1453,6 +1453,8 @@ ve.ce.Surface.prototype.onContentChange = function ( node, previous, next ) {
 					)
 				) {
 					annotations.removeAt( i );
+					i--;
+					length--;
 				}
 			}
 		}
