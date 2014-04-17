@@ -685,7 +685,7 @@ ve.dm.Surface.prototype.breakpoint = function () {
 		this.undoStack.push( {
 			'transactions': this.newTransactions,
 			'selection': this.selection.clone(),
-			'selectionBefore': this.selectionBefore.clone()
+			'selectionBefore': this.selectionBefore && this.selectionBefore.clone()
 		} );
 		this.newTransactions = [];
 		this.emit( 'history' );
